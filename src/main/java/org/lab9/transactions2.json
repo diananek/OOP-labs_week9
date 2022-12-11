@@ -1,0 +1,31 @@
+{
+    "transactions": [{
+            "id": 1,
+            "amount": 540,
+            "isIncome": true,
+            "categoryId": 1,
+            "comment": ""
+        },
+        {
+            "id": 2,
+            "amount": 64,
+            "isIncome": false,
+            "categoryId": 3,
+            "comment": "clothes"
+        },
+        {
+            "id": 3,
+            "amount": 30000,
+            "isIncome": false,
+            "categoryId": 5,
+            "comment": "freeze"
+        },
+        {
+            "id": 4,
+            "amount": 55800,
+            "isIncome": true,
+            "categoryId": 2,
+            "comment": ""
+        }
+    ]
+}
