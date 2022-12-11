@@ -6,13 +6,11 @@ import com.google.gson.Gson;
 import org.lab9.entity.TransactionHistory;
 
 public class GsonParser {
-    public TransactionHistory parse() {
+    public TransactionHistory parse(FileReader reader) {
         Gson gson = new Gson();
 
-        try(FileReader reader = new FileReader("src/main/java/org/lab9/transactions2.json")) {
-            TransactionHistory data = gson.fromJson(reader, TransactionHistory.class);
-
-            return data;
+        try {
+            return gson.fromJson(reader, TransactionHistory.class);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
