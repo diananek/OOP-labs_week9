@@ -3,7 +3,7 @@ package org.lab9.entity;
 import lombok.Getter;
 import lombok.Setter;
 
-public class Account {
+public abstract class Account {
     @Getter @Setter private Integer id;
     @Getter @Setter private Double currentSum;
     @Getter @Setter private String currency;
